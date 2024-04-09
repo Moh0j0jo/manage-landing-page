@@ -1,9 +1,10 @@
 const About = () => {
   return (
-    <section className="w-full flex flex-col gap-7 pl-4 font-beVietnam">
-      <div className="h-1/2 flex flex-col gap-7 px-10">
+    <section className="section pl-5 gap-10">
+      {/* <div className="csmBackTablet"></div> */}
+      <div className="h-1/2 flex flex-col items-center gap-7 px-5">
       <h2 className="w-66 text-4xl font-bold text-dark-bue text-center">What’s different about Manage?</h2>
-      <p className="desc4p text-center">
+      <p className="desc4p text-center w-80">
         Manage provides all the functionality your team needs, without the
         complexity. Our software is tailor-made for modern digital product
         teams.

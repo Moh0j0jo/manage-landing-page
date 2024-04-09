@@ -7,7 +7,7 @@
 
 
 .navbar{
-  @apply w-dvw h-24 flex flex-row justify-between px-5 py-10 static;
+  @apply w-dvw h-24 flex flex-row justify-between px-5 py-10 static bg-transparent;
   @apply md:p-0 items-center;
 }
 
@@ -16,7 +16,16 @@
 }
 
 .desc4p {
-  @apply w-full font-medium text-gray-400;
+  @apply font-medium text-gray-400;
+}
+
+.csmBackGMobile {
+  @apply bg-bgSimplify-Sec-Mob bg-left bg-no-repeat;
+}
+
+.csmBackTablet {
+  @apply w-full h-40 -z-10 absolute -top-20 -right-20
+  bg-bgSimplify-Sec-Tab bg-cover bg-right-top bg-no-repeat;
 }
 
 .close {
@@ -26,6 +35,10 @@
 .nav-wrapper {
   @apply w-full h-svh absolute top-24 left-0 bg-gradient-to-b from-gray-50 to-gray-900 opacity-90 justify-center;
   /* @apply md:w-full md:flex md:flex-row md:top-0; */
+}
+
+.section {
+  @apply flex flex-col justify-center items-center mb-28;
 }
 
 .nav-links {

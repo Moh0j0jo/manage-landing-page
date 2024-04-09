@@ -1,17 +1,12 @@
 import Button from "./Button";
-import { ReactSVG } from "react-svg";
-import scgGraphs from "../Assets/images/illustration-intro.svg"
+import IllustrationSvg from "./IllustrGraphSVG";
 
 
 const Graphs = () => {
   return (
-    <section className="flex flex-wrap items-center justify-between">
-      <ReactSVG className="md:order-last"
-        src={scgGraphs}
-        title="Graphs"
-        useRequestCache={false}
-        wrapper="span"
-      />
+    <section className="section px-5 bg-transparent">
+      {/* <div className="csmBackTablet"></div> */}
+      <IllustrationSvg width={"w-5/6"} height={"h-2/5"} backgroundColor={"transparent"}/>
       <div className="flex flex-col items-center justify-center gap-4  text-center text-dark-bue">
         <h1 className="w-96 text-4xl font-semibold">
           Bring everyone together to build better products.

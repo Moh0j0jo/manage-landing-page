@@ -16,6 +16,14 @@ module.exports = withMT({
       'lg': '1440px',
     },
     extend: {
+      backgroundImage:{
+        'bgSimplify-Sec-Mob': "url('/src/Assets/images/bg-simplify-section-mobile.svg')",
+        
+
+        'bgSimplify-Sec-Tab': "url('/src/Assets/images/bg-tablet-pattern.svg')",
+
+        'bgSimplify-Sec-Desk': "url('/src/Assets/images/bg-simplify-section-desktop.svg')"
+      },
       colors: {
         'bright-red': '#f25f3a',
         'dark-bue':'#242d52',

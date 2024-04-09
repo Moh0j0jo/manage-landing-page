@@ -1,17 +1,12 @@
 import Button from "./Button";
 import { useState } from "react";
 
-
-
 const Navbar = () => {
+  const openMenu = () => {
+    setOpen(!open);
+  };
 
-  
-const openMenu = () => {
-  setOpen(!open);
-};
-
-const [open, setOpen] = useState(false);
-
+  const [open, setOpen] = useState(false);
 
   return (
     <nav className="navbar">
@@ -36,33 +31,29 @@ const [open, setOpen] = useState(false);
           </g>
         </svg>
       </span>
-      <div className={open ? "nav-wrapper open" : "nav-wrapper close"}>
-       
-      </div>
+      <div className={open ? "nav-wrapper open" : "nav-wrapper close"}></div>
 
       <ul className={open ? "nav-links open" : "nav-links close"}>
-          <li>
-            <a href="#">Pricing</a>
-          </li>
-          <li>
-            <a href="#">Product</a>
-          </li>
-          <li>
-            <a href="#">About Us</a>
-          </li>
-          <li>
-            <a href="#">Careers</a>
-          </li>
-          <li>
-            <a href="#">Community</a>
-          </li>
-        </ul>
+        <li>
+          <a href="#">Pricing</a>
+        </li>
+        <li>
+          <a href="#">Product</a>
+        </li>
+        <li>
+          <a href="#">About Us</a>
+        </li>
+        <li>
+          <a href="#">Careers</a>
+        </li>
+        <li>
+          <a href="#">Community</a>
+        </li>
+      </ul>
 
       <Button param={"Get Started"} mobile={true} />
-     
-      <div 
-        className="md:hidden"
-        onClick={openMenu}>
+
+      <div className="md:hidden" onClick={openMenu}>
         {open ? (
           <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22">
             <path
@@ -71,9 +62,7 @@ const [open, setOpen] = useState(false);
               d="M17.925.747l2.828 2.828L13.328 11l7.425 7.425-2.828 2.828-7.425-7.425-7.425 7.425-2.828-2.828L7.671 11 .247 3.575 3.075.747 10.5 8.171 17.925.747z"
             />
           </svg>
-
         ) : (
-
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="18">
             <g fill="#242D52" fillRule="evenodd">
               <path d="M0 0h25v4H0zM0 7h25v4H0zM0 14h25v4H0z" />
