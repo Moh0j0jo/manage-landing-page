@@ -50,7 +50,7 @@ const Testimonials = () => {
   };
 
   return (
-    <section className="section px-10 font-beVietnam">
+    <section className="section px-10 font-beVietnam md:flex md:flex-col md:gap-7">
       <h2 className="mb-12 text-3xl font-bold text-dark-bue">What they've said</h2>
 
       <div className="relative">
@@ -70,7 +70,7 @@ const Testimonials = () => {
             <div className="flex flex-wrap justify-center">
               <div className="w-full shrink-0 grow-0 basis-auto px-3 lg:w-8/12">
                 <h5 className="mb-2 text-lg font-bold text-dark-bue text-center">{slide.name}</h5>
-                <p className="mb-6 text-gray-500 dark:text-neutral-300 text-center">
+                <p className="mb-6 text-gray-500 dark:text-neutral-300 text-center md:w-1/2 md:m-auto">
                   {slide.testimonial}
                 </p>
                 <ul className="mb-0 flex justify-center">

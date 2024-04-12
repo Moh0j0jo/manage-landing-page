@@ -2,9 +2,10 @@ import Button from "./Button";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col h-svh">
-      <div className="h-2/5 bg-bright-red flex flex-col items-center justify-center gap-7 csmBackGMobile">
-        <h1 className="w-72 text-4xl font-semibold text-center text-very-light-gray">
+    <footer className="flex flex-col h-svh md:h-74">
+      <div className="h-1/5 bg-bright-red flex flex-col items-center justify-center gap-7 csmBackGMobile
+      md:flex-row md:justify-between md: px-20 md:h-32">
+        <h1 className="w-72 text-4xl font-semibold text-center text-very-light-gray md:text-2xl md:text-start">
           {" "}
           Simplify how your team works today.
         </h1>
@@ -14,8 +15,9 @@ const Footer = () => {
         />
       </div>
 
-      <div className="h-3/5 flex flex-col gap-9 bg-very-dark-blue p-10 text-center">
-        <div className="order-3 h-20 flex items-center justify-center">
+      <div className="h-3/5 flex flex-col gap-9 bg-very-dark-blue p-10 text-center
+      md:grid md:grid-cols-4 md:row-gap-7 md:gap-y-0 md:h-fit md:px-12 md:justify-center md:items-center">
+        <div className="order-4 h-20 flex items-center justify-center  md:order-1 md:justify-start">
           <svg xmlns="http://www.w3.org/2000/svg" width="146" height="24">
             <g fill="none" fillRule="evenodd">
               <path
@@ -36,7 +38,7 @@ const Footer = () => {
             </g>
           </svg>
         </div>
-        <div className="text-very-light-gray font-beVietnam mx-auto">
+        <div className="order-3 text-very-light-gray font-beVietnam mx-auto  md:order-2 md:row-span-2 md:col-span-2">
           <ul className="grid grid-cols-2 text-center gap-x-20 gap-y-3">
             <li className="w-fit">
               <a href="#"> Home</a>
@@ -61,8 +63,8 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full h-10 flex flex-row justify-center items-center gap-7">
-          <span className="w-12 h-full flex justify-center items-center">
+        <div className="order-3 w-full h-10 flex flex-row justify-center items-center gap-7  md:order-6 md:row-span-1 md:col-span-1 md:justify-start" >
+          <span className="w-6 h-full flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="#FFF"
@@ -72,7 +74,7 @@ const Footer = () => {
               <path d="M18.896 0H1.104C.494 0 0 .494 0 1.104v17.793C0 19.506.494 20 1.104 20h9.58v-7.745H8.076V9.237h2.606V7.01c0-2.583 1.578-3.99 3.883-3.99 1.104 0 2.052.082 2.329.119v2.7h-1.598c-1.254 0-1.496.597-1.496 1.47v1.928h2.989l-.39 3.018h-2.6V20h5.098c.608 0 1.102-.494 1.102-1.104V1.104C20 .494 19.506 0 18.896 0z" />
             </svg>
           </span>
-          <span className="w-12 h-full flex justify-center items-center">
+          <span className="w-6 h-full flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -84,7 +86,7 @@ const Footer = () => {
               />
             </svg>
           </span>
-          <span className="w-12 h-full flex justify-center items-center">
+          <span className="w-6 h-full flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -96,7 +98,7 @@ const Footer = () => {
               />
             </svg>
           </span>
-          <span className="w-12 h-full flex justify-center items-center">
+          <span className="w-6 h-full flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -108,7 +110,7 @@ const Footer = () => {
               />
             </svg>
           </span>
-          <span className="w-12 h-full flex justify-center items-center">
+          <span className="w-6 h-full flex justify-center items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
@@ -121,9 +123,9 @@ const Footer = () => {
             </svg>
           </span>
         </div>
-        <div className="w-full flex items-center justify-center gap-3 order-first">
+        <div className="order-1 w-full flex items-center justify-center gap-3  md:order-2 md:row-span-1 md:col-span-1 md:gap-1">
           <input
-            className="w-2/3 h-12 rounded-3xl py-3 px-7 font-beVietnam"
+            className="w-2/3 h-12 rounded-3xl py-3 px-7 font-beVietnam md:text-xs md:w-66 md:px-5"
             type="email"
             name=""
             id=""
@@ -134,8 +136,8 @@ const Footer = () => {
             styles="w-[80px] h-9 bg-bright-red text-white text-sm"
           />
         </div>
-        <div className="order-last text-gray-500 text-sm">
-          <p> Copyright 2020. All Rights Reserved</p>
+        <div className="order-last text-gray-500 text-sm md:order-last md:row-span-1 md:col-span-1">
+          <p className="md: text-center"> Copyright 2020. All Rights Reserved</p>
         </div>
       </div>
     </footer>

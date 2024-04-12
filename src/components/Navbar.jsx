@@ -51,7 +51,7 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <Button param={"Get Started"} mobile={true} />
+        <Button label={"Get Started"} styles='hidden w-44 h-8 bg-bright-red text-white md:flex' />
 
       <div className="md:hidden" onClick={openMenu}>
         {open ? (
