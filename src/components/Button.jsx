@@ -1,6 +1,6 @@
 const Button = ({label, styles=''}) => {
   
-  const defaultClasses = 'flex items-center justify-center rounded-3xl font-semibold py-6'
+  const defaultClasses = 'flex items-center justify-center rounded-3xl font-semibold py-6 hover:opacity-50'
 
   const buttonClasses = `${defaultClasses} ${styles}`;
   

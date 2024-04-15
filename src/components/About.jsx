@@ -3,9 +3,9 @@ const About = () => {
     <section className="section pl-5 gap-10">
       {/* <div className="csmBackTablet"></div> */}
       <div 
-        className="h-1/2 flex flex-col items-center gap-7 px-5 md:w-1/2  md:justify-start">
+        className="h-1/2 flex flex-col items-center gap-7 px-5 md:justify-start md:w-1/2 md:min-h-[650px] md:p-5 lg:max-h-[650px]">
       <h2 
-        className="w-66 text-4xl font-bold text-dark-bue text-center md:w-2/3 md:text-start md:text-5xl">What’s different about Manage?
+        className="w-66 text-4xl font-bold text-dark-bue text-center md:w-2/3 md:text-start md:text-4xl">What’s different about Manage?
       </h2>
       <p 
         className="desc4p text-center w-80 md:text-start md:w-2/3 md:px-0">
@@ -15,7 +15,7 @@ const About = () => {
       </p>
       </div>
       <div 
-        className="h-1/2 flex flex-col gap-7 md:w-1/2 md:p-5 md:gap-4">
+        className="h-1/2 flex flex-col gap-7 md:w-1/2 md:p-5 md:min-h-[650px] md:gap-4 lg:max-h-[650px]">
       <h4 className="desc4p_title">
         <span className="bg-bright-red px-7 py-3 rounded-3xl text-very-light-gray font-bold mr-3 inline-block align-middle"> 01</span> Track company-wide progress
       </h4>
@@ -34,7 +34,7 @@ const About = () => {
       </p>
 
       <h4 className="desc4p_title" >
-        <span className="bg-bright-red px-7 py-3 rounded-3xl text-very-light-gray font-boldmr-3 inline-block align-middle">03</span> Everything you need in one place
+        <span className="bg-bright-red px-7 py-3 rounded-3xl text-very-light-gray font-bold mr-3 inline-block align-middle">03</span> Everything you need in one place
       </h4>
       <p className="desc4p">
         Stop jumping from one service to another to communicate, store files,

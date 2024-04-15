@@ -21,22 +21,17 @@
 
 .desc4p_title {
   @apply h-12 font-extrabold font-beVietnam text-dark-bue bg-very-pale-red rounded-l-3xl; 
-  @apply md:bg-white;
+  @apply md:bg-white md:gap-5;
 }
 
 .desc4p {
   @apply font-medium text-gray-400 md:w-full md:px-24;
 }
 
-.csmBackGMobile {
-  @apply bg-bgSimplify-Sec-Mob bg-left bg-no-repeat;
-  @apply md:bg-bgSimplify-Sec-Desk;
-}
-
-
-.csmBackTablet {
-  @apply w-full h-40 -z-10 absolute -top-20 -right-20
-  bg-bgSimplify-Sec-Tab bg-cover bg-right-top bg-no-repeat;
+.SVGBckground {
+  @apply bg-bgSimplify-Sec-Mob;
+  @apply md:bg-bgSimplify-Sec-Tab;
+  @apply lg:bg-bgSimplify-Sec-Desk;
 }
 
 
@@ -46,7 +41,7 @@
 }
 
 .section {
-  @apply flex flex-col justify-center items-center mb-28;
+  @apply flex flex-col justify-center items-center;
   @apply md:flex-row
 }
 

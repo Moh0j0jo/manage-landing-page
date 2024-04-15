@@ -35,19 +35,19 @@ const Navbar = () => {
 
       <ul className={open ? "nav-links open" : "nav-links close"}>
         <li>
-          <a href="#">Pricing</a>
+          <a href="#" className="hover:opacity-50">Pricing</a>
         </li>
         <li>
-          <a href="#">Product</a>
+          <a href="#" className="hover:opacity-50">Product</a>
         </li>
         <li>
-          <a href="#">About Us</a>
+          <a href="#" className="hover:opacity-50">About Us</a>
         </li>
         <li>
-          <a href="#">Careers</a>
+          <a href="#" className="hover:opacity-50">Careers</a>
         </li>
         <li>
-          <a href="#">Community</a>
+          <a href="#" className="hover:opacity-50">Community</a>
         </li>
       </ul>
 

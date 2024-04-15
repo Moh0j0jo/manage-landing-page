@@ -1,11 +1,11 @@
 import React from "react";
 
-function IllustrationSvg({ width, height, backgroundColor }) {
+function IllustrationSvg({ width, height }) {
   return (
     <>
       <svg
         viewBox="0 0 580 525"
-        style={{ width: { width }, height: { height },backgroundColor: {backgroundColor}}}
+        style={{ width: { width }, height: { height }}}
       >
         <defs>
           <filter

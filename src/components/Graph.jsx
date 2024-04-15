@@ -4,9 +4,9 @@ import IllustrationSvg from "./IllustrGraphSVG";
 
 const Graphs = () => {
   return (
-    <section className="section px-5 bg-transparent  @apply md:flex-row-reverse md:gap-7 md:mt-10 md:px-10">
-      {/* <div className="csmBackTablet"></div> */}
-      <IllustrationSvg width={"w-5/6"} height={"h-2/5"} backgroundColor={"transparent"}/>
+    <section 
+      className="section SVGBckground px-5 bg-top bg-repeat md:flex-row-reverse md:gap-7 md:mt-10 md:mb-28 md:px-10 md:bg-right-bottom md:bg-repeat-y lg:bg-fixed lg:bg-no-repeat">
+      <IllustrationSvg width={"w-5/6"} height={"h-2/5"}/>
       <div 
         className="flex flex-col items-center justify-center gap-4  text-center text-dark-bue  
           md:w-2/3 md:gap-7 md:items-start">
