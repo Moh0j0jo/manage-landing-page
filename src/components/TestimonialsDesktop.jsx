@@ -6,13 +6,13 @@ const TestimonialsDesktop = ({ slides }) => {
           key={index}
           className=""
         >
-          <div class="">
+          <div>
             <blockquote className="rounded-lg bg-gray-50 p-6 shadow-sm sm:p-8">
-              <div class="flex items-center justify-center gap-4 relative">
+              <div className="flex items-center justify-center gap-4 relative">
                 <img
                   alt=""
                   src={slide.avatar}
-                  class="size-14 rounded-full object-cover absolute bottom-10 left-auto"
+                  className="size-14 rounded-full object-cover absolute bottom-10 left-auto"
                 />
 
                 <div>

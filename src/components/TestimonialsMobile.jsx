@@ -3,7 +3,6 @@ import React, { useState } from "react";
 const TestimonialsMobile = ({slides}) => {
   
 
-  console.log(slides)
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToPrevSlide = () => {

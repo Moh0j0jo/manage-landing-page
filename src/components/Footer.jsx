@@ -19,7 +19,7 @@ const Footer = () => {
   
 
   return (
-    <footer className="flex flex-col h-svh md:h-fit">
+    <footer className="flex flex-col h-svh md:h-fit  lg:max-w-full">
       <div
         className="h-2/5 bg-bright-red flex flex-col items-center justify-center gap-7 bg-bgSimplify-Sec-Mob bg-left bg-no-repeat
       md:flex-row md:justify-between md: px-20 md:h-40"

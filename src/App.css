@@ -5,16 +5,21 @@
 @tailwind components;
 @tailwind utilities;
 
+.section {
+  @apply flex flex-col justify-center items-center mb-28;
+  @apply md:flex-row;
+}
+
 
 .navbar{
   @apply w-dvw h-24 flex flex-row justify-between px-5 py-10 static bg-transparent;
-  @apply md:p-0 items-center justify-between md:px-10;
+  @apply md:w-full md:p-0 md:items-center md:justify-between md:px-10;
 }
 
 .open {
   @apply flex;
 }
-
+y
 .close {
   @apply hidden;
 }
@@ -40,10 +45,6 @@
   @apply md:hidden
 }
 
-.section {
-  @apply flex flex-col justify-center items-center;
-  @apply md:flex-row
-}
 
 .nav-links {
   @apply w-80 h-72 absolute top-24 left-1/2 -translate-x-1/2 bg-white flex-col gap-8 py-6 items-center list-none font-bold text-dark-bue border rounded-md z-20;

@@ -8,23 +8,22 @@ import TestimonialsMobile from "./TestimonialsMobile";
 import TestimonialsDesktop from "./TestimonialsDesktop";
 
 const Testimonials = () => {
-  // State to track the current slide
+
 
   const [showWide, setShowWide] = useState(window.innerWidth > 1024);
   useEffect(() => {
     const handleResize = () => {
-        // Update state based on screen width
+
         setShowWide(window.innerWidth > 1024);
     };
 
-    // Set up event listener for window resize
+
     window.addEventListener('resize', handleResize);
 
-    // Clean up event listener
     return () => window.removeEventListener('resize', handleResize);
 }, []);
 
-  // Array of slide components (simplified for demonstration)
+
   const slides = [
     {
       id: 1,
@@ -62,8 +61,7 @@ const Testimonials = () => {
     <section className="section px-10 font-beVietnam md:flex md:flex-col md:gap-7 md:mb-28">
       <h2 className="mb-12 text-3xl font-bold text-dark-bue lg:text-6xl">What they've said</h2>
 
-      {showWide ? 
-        
+      {showWide ?         
         <TestimonialsDesktop slides={slides}/>:
         <TestimonialsMobile slides={slides}/>
       }

@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-  <div className='w-full md:max-w-9xl flex flex-col md:m-auto'>
+  <div className='w-full flex flex-col md:m-auto'>
     <Navbar/>
     <Graphs/>
     <About/>
